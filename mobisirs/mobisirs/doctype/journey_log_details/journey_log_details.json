@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-25 11:05:32.178552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "pickup_time",
+  "from",
+  "column_break_delt",
+  "to",
+  "name_of_guest"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From",
+   "options": "Journey Location"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To",
+   "options": "Journey Location"
+  },
+  {
+   "fieldname": "name_of_guest",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Guest"
+  },
+  {
+   "fieldname": "column_break_delt",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-25 11:18:47.457195",
+ "modified_by": "Administrator",
+ "module": "Mobisirs",
+ "name": "Journey Log Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
