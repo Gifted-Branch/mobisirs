@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-23 17:08:54.284015",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_opwq",
+  "client_for",
+  "column_break_eiyo",
+  "journey_location",
+  "column_break_tpzr",
+  "company",
+  "column_break_xstb",
+  "default_company_currency",
+  "section_break_uvec",
+  "currency",
+  "column_break_axne",
+  "exchange_rate",
+  "naming_series",
+  "section_break_jdbe",
+  "journey_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "journey_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Journey Location",
+   "options": "Journey Location"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_opwq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jdbe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "journey_info",
+   "fieldtype": "Table",
+   "label": "Journey Info",
+   "options": "Journey Log Details"
+  },
+  {
+   "default": "JL-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "JL-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_xstb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tpzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_uvec",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "client_for.default_currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_axne",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Link",
+   "label": "Exchange Rate",
+   "options": "Currency Exchange"
+  },
+  {
+   "fieldname": "client_for",
+   "fieldtype": "Link",
+   "label": "Client For",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_eiyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_company_currency",
+   "fieldtype": "Link",
+   "label": "Default Company Currency",
+   "options": "Currency"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 17:17:01.933195",
+ "modified_by": "Administrator",
+ "module": "Mobisirs",
+ "name": "Journey Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
