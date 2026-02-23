@@ -79,9 +79,9 @@
   {
    "default": "1",
    "fieldname": "exchange_rate",
-   "fieldtype": "Link",
+   "fieldtype": "Float",
    "label": "Exchange Rate",
-   "options": "Currency Exchange"
+   "precision": "9"
   },
   {
    "fieldname": "client_for",
@@ -105,7 +105,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-23 17:22:55.436594",
+ "modified": "2026-02-23 17:36:05.743171",
  "modified_by": "Administrator",
  "module": "Mobisirs",
  "name": "Journey Log",
